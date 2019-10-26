@@ -1,0 +1,41 @@
+.form
+    border: 1px solid rgba(0, 0, 0, 0.21)
+    border-top: none
+    width: 100%
+    height: 166px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 71px
+    position: relative
+    input
+        width: 268px
+        height: 45px
+        border: 1px solid rgba(0, 0, 0, 0.21)
+        border-radius: 20px
+        font-size: 13px
+        color: rgba(16, 16, 16, 0.7)
+        padding-left: 28px
+        margin-right: 6px
+
+    img
+        position: absolute
+        top: -34%
+
+    &::after
+        content: ''
+        height: 1px
+        width: 44%
+        background-color: rgba(0, 0, 0, 0.21)
+        position: absolute
+        top: 0
+        right: 0
+
+    &::before
+        content: ''
+        height: 1px
+        width: 44%
+        background-color: rgba(0, 0, 0, 0.21)
+        position: absolute
+        top: 0
+        left: 0

@@ -3,8 +3,22 @@
 @import 'base/variables'
 
 .container
-    width: 1140px
+    max-width: 1140px
     margin: 0 auto
+
+@media ( max-width: 1200px)
+    .container
+        width: 650px
+
+    
+@media ( max-width: 991px)
+    .container
+        width: 510px
+
+@media (max-width: 767px)
+    .container
+        width: 370px
+        
 
 *
     font-family: 'Roboto'
@@ -12,3 +26,11 @@
 @import 'blocks/promo'
 @import "blocks/header"
 @import 'blocks/buttons'
+@import 'blocks/titles'
+@import 'blocks/advantages'
+@import 'blocks/features'
+@import 'blocks/agent'
+@import 'blocks/price-list'
+@import 'blocks/forms'
+@import 'blocks/consultation'
+@import 'blocks/work'
