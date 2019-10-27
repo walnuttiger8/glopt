@@ -37,9 +37,6 @@
     &_borderless
         border-top: none
 
-    &_noborder
-        border: none
-
         &::after
             content: ''
             height: 1px
@@ -57,3 +54,14 @@
             position: absolute
             top: 0
             left: 0
+
+    &_noborder
+        border: none
+
+@media ( max-width: 1200px )
+    .form
+        input
+            width: 242px
+        textarea
+            width: 740px
+    

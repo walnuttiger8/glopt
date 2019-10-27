@@ -1,0 +1,68 @@
+.footer
+    background-color: #25333c
+    padding-bottom: 36px
+    
+    &__logo
+        margin-right: 44px
+        img
+            width: 67px
+            height: 71px
+
+    &__official
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        margin-right: 278px
+
+    &__contacts
+        font-weight: 300
+        font-size: 14px
+        color: #ffffff
+        display: flex
+        flex-direction: column
+        text-align: right
+        margin-right: 19px
+        
+    &__phone
+        font-size: 19px
+        font-weight: 700
+        color: #ffffff
+        
+    &__links
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-top: 30px
+
+    &__info
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        border-bottom: 1px solid rgba(255,255,255,0.3 )
+        margin-top: 24px
+        padding-bottom: 26px
+
+    &__rights   
+        color: rgba(255, 255, 255, 0.6)
+        font-weight: 300
+        font-size: 13px
+
+    &__confidential
+        color: rgba(255, 255, 255, 0.6)
+        font-size: 13px
+        font-weight: 300
+        &:hover
+            color: $pressed-color
+
+@media (max-width: 1200px)
+    .footer
+        &__logo
+            margin-right: 17px
+
+        &__official
+            font-size: 15px
+            margin-right: 180px
+        &__phone
+            font-size: 18px
+        &__contacts
+            margin-right: 20px

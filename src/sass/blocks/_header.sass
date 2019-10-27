@@ -2,14 +2,16 @@
     display: flex
     padding-top: 23px
     align-items: center
+    width: 100%
     
-    
+    &__logo
+        img
+            width: 100%
 
     &__menu
         display: flex
         justify-content: space-between
         align-items: center
-        width: 600px
         margin-left: 55px
         margin-right: 40px
         
@@ -19,6 +21,7 @@
         font-weight: 300
         border-right: 1px dotted #898b92
         padding-right: 10px
+        padding-left: 5px
         
         &:nth-child(6)
             border-right: none
@@ -47,3 +50,14 @@
             color: $main-color
             text-decoration: none
 
+@media ( max-width: 1200px)
+    .header
+        &__logo
+            width: 70px
+
+        &__menu
+            margin-left: 35px
+
+        &__phone
+            font-size: 16px
+    
