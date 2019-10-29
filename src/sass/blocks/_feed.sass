@@ -23,7 +23,7 @@
         text-align: center
         color: #3a3a3a
         font-weight: 300
-        width: 600px
+        width: 60%
 
     .slick
         
@@ -52,4 +52,16 @@
                 left: 38%
             &-next
                 right: 38%
+
+@media (max-width: 575px)
+    .feed
+        &__descr
+            width: 100%
+        .slick
+            &-prev
+                left: 18%
+                bottom: 60%
+            &-next
+                right: 18%
+                bottom: 60%
     

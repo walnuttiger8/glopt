@@ -2,6 +2,7 @@
     background: url('../img/bg-1.jpg') center (center/cover) no-repeat
     min-height: 680px
     width: 100%
+    padding-bottom: 82px
 
     &__wrapper
         display: flex
@@ -31,7 +32,7 @@
         line-height: 20px
 
     &__divider
-        width: 810px
+        // width: 810px
         display: flex
         justify-content: space-between
         align-items: center
@@ -48,7 +49,7 @@
 
     &__icons
         display: flex
-        align-items: center
+        align-items: baseline
         justify-content: space-between
         margin-top: 25px
     &__icon
@@ -61,4 +62,38 @@
         font-weight: 300
         width: 23%
         color: #ffffff
+
+@media (max-width: 991px)
+    .promo
+        &__header
+            font-size: 62px
+        &__official
+            font-size: 22px
+            margin: 10px
+        &__subheader
+            font-size: 38px
                 
+
+@media ( max-width: 768px )
+    .promo
+        position: relative
+        &__icon
+            width: 300px
+        &__icons
+            justify-content: space-around
+
+        &__header
+            font-size: 58px
+        &__subheader
+            font-size: 34px
+
+@media (max-width: 576px)
+    .promo
+        &__official
+            font-size: 18px
+        &__header
+            font-size: 35px
+        &__subheader
+            font-size: 24px
+            line-height: 22px
+    

@@ -64,4 +64,28 @@
             width: 242px
         textarea
             width: 740px
+
+@media ( max-width: 768px )
+    .form
+        &_noborder
+
+            flex-direction: column
+            align-items: flex-start
+            padding-left: 15px
+            input
+                width: 60%
+                margin-top: 10px
+            textarea
+                width: 80%
+
+@media (max-width: 576px)
+    .form
+        &_noborder
+            align-items: center
+            input
+                width: 95%
+
+            textarea
+                width: 95%
+                height: 85px
     
